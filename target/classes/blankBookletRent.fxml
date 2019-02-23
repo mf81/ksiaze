@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="805.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="labelAccount2" fitHeight="781.0" fitWidth="500.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@jpgs/ksiazeczka-cz-trzy.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelAccount11" alignment="CENTER" layoutX="65.0" layoutY="111.0" prefHeight="13.0" prefWidth="102.0" text="Numer konta">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAccount12" layoutX="186.0" layoutY="78.0" prefHeight="16.0" prefWidth="299.0" style="${labelAccount11.style}" text="${labelAccount11.text}" tooltip="${labelAccount11.tooltip}">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAccount111" alignment="CENTER" layoutX="60.0" layoutY="372.0" prefHeight="11.0" prefWidth="103.0" style="${labelAccount11.style}" text="${labelAccount11.text}" tooltip="${labelAccount11.tooltip}">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAccount1111" alignment="CENTER" layoutX="62.0" layoutY="629.0" prefHeight="14.0" prefWidth="100.0" style="${labelAccount11.style}" text="${labelAccount11.text}" tooltip="${labelAccount11.tooltip}">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAccount121" layoutX="182.0" layoutY="337.0" prefHeight="15.0" prefWidth="298.0" style="${labelAccount11.style}" text="${labelAccount11.text}" tooltip="${labelAccount11.tooltip}">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAccount1211" layoutX="182.0" layoutY="596.0" prefHeight="15.0" prefWidth="298.0" style="${labelAccount11.style}" text="${labelAccount11.text}" tooltip="${labelAccount11.tooltip}">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+
+
+      <Label fx:id="labelAdressRent" alignment="CENTER" layoutX="64.0" layoutY="181.0" prefHeight="13.0" prefWidth="103.0">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdress1" alignment="CENTER" layoutX="60.0" layoutY="439.0" prefHeight="13.0" prefWidth="103.0" style="${labelAdress.style}" text="${labelAdress.text}" tooltip="${labelAdress.tooltip}">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdress11" layoutX="68.0" layoutY="688.0" prefHeight="17.0" prefWidth="90.0" style="${labelAdress.style}" text="${labelAdress.text}" tooltip="${labelAdress.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdress2" layoutX="186.0" layoutY="150.0" prefHeight="17.0" prefWidth="162.0" style="${labelAdress.style}" text="${labelAdress.text}" tooltip="${labelAdress.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdress21" layoutX="182.0" layoutY="408.0" prefHeight="17.0" prefWidth="172.0" style="${labelAdress.style}" text="${labelAdress.text}" tooltip="${labelAdress.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdress211" layoutX="182.0" layoutY="668.0" prefHeight="17.0" prefWidth="172.0" style="${labelAdress.style}" text="${labelAdress.text}" tooltip="${labelAdress.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="labelZipCity" layoutX="349.0" layoutY="150.0" prefHeight="17.0" prefWidth="136.0" text="Label">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelZipCity1" layoutX="341.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" style="${labelZipCity.style}" text="${labelZipCity.text}" tooltip="${labelZipCity.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelZipCity11" layoutX="348.0" layoutY="670.0" prefHeight="17.0" prefWidth="132.0" style="${labelZipCity.style}" text="${labelZipCity.text}" tooltip="${labelZipCity.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelName" alignment="CENTER" layoutX="64.0" layoutY="163.0" prefHeight="13.0" prefWidth="103.0" text="Name">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName1" alignment="CENTER" layoutX="62.0" layoutY="422.0" prefHeight="13.0" prefWidth="100.0" style="${labelName.style}" text="${labelName.text}" tooltip="${labelName.tooltip}">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName11" alignment="CENTER" layoutX="61.0" layoutY="681.0" prefHeight="13.0" prefWidth="102.0" style="${labelName.style}" text="${labelName.text}" tooltip="${labelName.tooltip}">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName111" layoutX="186.0" layoutY="135.0" prefHeight="13.0" prefWidth="298.0" style="${labelName.style}" text="${labelName.text}" tooltip="${labelName.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName1111" layoutX="181.0" layoutY="392.0" prefHeight="13.0" prefWidth="299.0" style="${labelName.style}" text="${labelName.text}" tooltip="${labelName.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName11111" layoutX="182.0" layoutY="651.0" prefHeight="13.0" prefWidth="299.0" style="${labelName.style}" text="${labelName.text}" tooltip="${labelName.tooltip}">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+
+ 
+   </children>
+</AnchorPane>
