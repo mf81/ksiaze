@@ -12,10 +12,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("mainWindow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("mainWindowSmall.fxml"));
         primaryStage.setTitle("Książe");
 
-        Scene scene = new Scene(root, 1200, 800);
+        Scene scene = new Scene(root, 1200, 750);
         primaryStage.setScene(scene);
         scene.getStylesheets().add(getClass().getClassLoader().getResource("css/bootstrap3.css").toExternalForm());
 

@@ -13,7 +13,7 @@
             <Image url="@jpgs/printingsJpgs/okladka-eksp-trzy.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="labelNameWM" layoutX="259.0" layoutY="77.0" prefHeight="47.0" prefWidth="231.0" text="Label" />
+      <Label fx:id="labelNameWM" layoutX="259.0" layoutY="77.0" prefHeight="47.0" prefWidth="231.0" text="Label" wrapText="true"/>
       <Separator layoutX="14.0" layoutY="274.0" prefHeight="0.0" prefWidth="491.0" />
       <Separator layoutX="14.0" layoutY="533.0" prefHeight="0.0" prefWidth="491.0" />
       <Separator layoutX="14.0" layoutY="16.0" prefHeight="0.0" prefWidth="491.0" />

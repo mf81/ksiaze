@@ -43,32 +43,32 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM" alignment="CENTER" layoutX="48.0" layoutY="83.0" prefHeight="14.0" prefWidth="99.0" text="labelNameWM">
+      <Label fx:id="labelNameWM" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="83.0" prefHeight="27.0" prefWidth="99.0" text="labelNameWM" wrapText="true">
          <font>
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM1" layoutX="171.0" layoutY="35.0" prefHeight="13.0" prefWidth="302.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}">
+      <Label fx:id="labelNameWM1" layoutX="171.0" layoutY="35.0" prefHeight="34.0" prefWidth="302.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM2" layoutX="48.0" layoutY="342.0" prefHeight="13.0" prefWidth="99.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}">
+      <Label fx:id="labelNameWM2" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="342.0" prefHeight="27.0" prefWidth="99.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM3" layoutX="171.0" layoutY="294.0" prefHeight="13.0" prefWidth="301.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}">
+      <Label fx:id="labelNameWM3" layoutX="171.0" layoutY="294.0" prefHeight="34.0" prefWidth="301.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM4" layoutX="48.0" layoutY="604.0" prefHeight="13.0" prefWidth="99.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}">
+      <Label fx:id="labelNameWM4" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="604.0" prefHeight="27.0" prefWidth="99.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM5" layoutX="171.0" layoutY="555.0" prefHeight="13.0" prefWidth="290.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}">
+      <Label fx:id="labelNameWM5" layoutX="171.0" layoutY="555.0" prefHeight="34.0" prefWidth="300.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
