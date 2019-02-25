@@ -48,7 +48,7 @@
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM1" layoutX="171.0" layoutY="35.0" prefHeight="34.0" prefWidth="302.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
+      <Label fx:id="labelNameWM1" alignment="TOP_LEFT" layoutX="171.0" layoutY="35.0" lineSpacing="6.0" prefHeight="34.0" prefWidth="302.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}"  wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
@@ -58,7 +58,7 @@
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM3" layoutX="171.0" layoutY="294.0" prefHeight="34.0" prefWidth="301.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
+      <Label fx:id="labelNameWM3" alignment="TOP_LEFT" layoutX="171.0" layoutY="294.0" lineSpacing="6.0" prefHeight="34.0" prefWidth="301.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
@@ -68,7 +68,7 @@
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM5" layoutX="171.0" layoutY="555.0" prefHeight="34.0" prefWidth="300.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
+      <Label fx:id="labelNameWM5" alignment="TOP_LEFT" layoutX="171.0" layoutY="555.0" lineSpacing="6.0" prefHeight="34.0" prefWidth="300.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
