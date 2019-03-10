@@ -45,23 +45,26 @@ public class Controller implements Initializable {
             labelName,labelName1, labelNameRenovation, labelName1Renovation, labelNameRent, labelName1Rent,
             labelAccount,labelAccount1, labelAccountRenovation, labelAccount1Renovation, labelAccountRent, labelAccount1Rent,
             labelNumberCheck, labelNumberCheckRenovation, labelNumberCheckRent,
-            labelIndex,labelIndex1, labelIndexRenovation, labelIndex1Renovation, labelIndexRent, labelIndex1Rent;
+            labelIndex,labelIndex1, labelIndexRenovation, labelIndex1Renovation, labelIndexRent, labelIndex1Rent,
+            labelIndexChange, labelIndexChangeRenovation, labelIndexOk, labelIndexOkRen;
 
     @FXML
     private TextField textFieldZipCity,textFieldWM, textFieldWMRenovation,textFieldAddress,
-            textFieldAddressRenovation, textFieldName, textFieldAccount, textFieldAccountRenovation, textFieldAccountRent, textFieldAddressRent;
+            textFieldAddressRenovation, textFieldName, textFieldAccount, textFieldAccountRenovation, textFieldAccountRent, textFieldAddressRent,
+            textFieldDiffrentIndex,textFieldDiffrentIndexRenovation;
 
     @FXML
-    private Button buttonPrintExploatation, buttonPrintRenovation, buttonPrintRent;
+    private Button buttonPrintExploatation, buttonPrintRenovation, buttonPrintRent, buttonChangeIndexExp, buttonChangeIndexRen,buttonCopyChangeIndexRen;
 
     @FXML
     private ComboBox<Integer> comboBoxNumberOfPagesEx,comboBoxNumberOfPagesRenovation,comboBoxNumberOfPagesRent;
 
     @FXML
-    private CheckBox chackBoxCoverExploatation,chackBoxCoverRenovation,chackBoxCoverRent;
+    private CheckBox chackBoxCoverExploatation,chackBoxCoverRenovation,chackBoxCoverRent, checkBoxIndex, getCheckBoxIndexRenovation;
 
     private Integer number = 0;
     private Boolean cover = true;
+    private Boolean buttonCopyChange = false;
 
 
     @FXML
@@ -106,6 +109,61 @@ public class Controller implements Initializable {
 
 
     public void initialize(URL location, ResourceBundle resources) {
+
+        checkBoxIndex.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue) {
+                    textFieldDiffrentIndex.requestFocus();
+                    textFieldDiffrentIndex.selectAll();
+                    labelIndexChange.setText("Wpisz inny INDEX lokalu:");
+                    textFieldDiffrentIndex.setEditable(true);
+                    buttonChangeIndexExp.setDisable(false);
+                    buttonCopyChange = true;
+                }
+                else {
+                    labelIndexChange.setText("Proponowany INDEX lokalu:");
+                    labelIndexOk.setText("");
+                    textFieldDiffrentIndex.setEditable(false);
+                    buttonChangeIndexExp.setDisable(true);
+                    textFieldDiffrentIndex.textProperty().setValue(countIndex.count(textFieldAccount.textProperty().get()));
+                    countIndex.setIndex(countIndex.count(textFieldAccount.textProperty().get()));
+                    labelIndex.textProperty().setValue(countIndex.getIndex());
+                    labelIndex1.textProperty().setValue(countIndex.getIndex());
+                    labelIndex.textProperty().setValue(countIndex.getIndex());
+                    labelIndex1.textProperty().setValue(countIndex.getIndex());
+                    buttonCopyChange = false;
+
+                }
+            }
+        });
+
+        getCheckBoxIndexRenovation.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue) {
+                    textFieldDiffrentIndexRenovation.requestFocus();
+                    textFieldDiffrentIndexRenovation.selectAll();
+                    labelIndexChangeRenovation.setText("Wpisz inny INDEX lokalu:");
+                    textFieldDiffrentIndexRenovation.setEditable(true);
+                    buttonChangeIndexRen.setDisable(false);
+                    if (buttonCopyChange)
+                            buttonCopyChangeIndexRen.setDisable(false);
+                        else
+                            buttonCopyChangeIndexRen.setDisable(true);
+                }
+                else {
+                    labelIndexChangeRenovation.setText("Proponowany INDEX lokalu:");
+                    labelIndexOkRen.setText("");
+                    textFieldDiffrentIndexRenovation.setEditable(false);
+                    buttonChangeIndexRen.setDisable(true);
+                    buttonCopyChangeIndexRen.setDisable(true);
+                    textFieldDiffrentIndexRenovation.textProperty().setValue(countIndex.count(textFieldAccountRenovation.textProperty().get()));
+                    countIndex.setIndex(countIndex.count(textFieldAccountRenovation.textProperty().get()));
+                    labelIndexRenovation.textProperty().setValue(countIndex.getIndex());
+                    labelIndex1Renovation.textProperty().setValue(countIndex.getIndex());
+
+                }
+            }
+        });
 
         chackBoxCoverExploatation.selectedProperty().addListener(new ChangeListener<Boolean>() {
             public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
@@ -250,6 +308,7 @@ public class Controller implements Initializable {
             labelNumberCheck.setTextFill(Color.GREEN);
             buttonPrintExploatation.setDisable(false);
 
+            textFieldDiffrentIndex.textProperty().setValue(countIndex.count(textFieldAccount.textProperty().get()));
             labelIndex.textProperty().setValue(countIndex.count(textFieldAccount.textProperty().get()));
             labelIndex1.textProperty().setValue(countIndex.count(textFieldAccount.textProperty().get()));
         }
@@ -275,6 +334,8 @@ public class Controller implements Initializable {
             labelNumberCheckRenovation.setTextFill(Color.GREEN);
             buttonPrintRenovation.setDisable(false);
 
+
+            textFieldDiffrentIndexRenovation.textProperty().setValue(countIndex.count(textFieldAccountRenovation.textProperty().get()));
             labelIndexRenovation.textProperty().setValue(countIndex.count(textFieldAccountRenovation.textProperty().get()));
             labelIndex1Renovation.textProperty().setValue(countIndex.count(textFieldAccountRenovation.textProperty().get()));
         }
@@ -363,6 +424,28 @@ public class Controller implements Initializable {
     }
 
     @FXML
+    private void buttonChangeIndexExpStart(){
+        labelIndexOk.setTextFill(Color.GREEN);
+        labelIndexOk.setText("OK ;-) zmieniony");
+        countIndex.setIndex(textFieldDiffrentIndex.textProperty().get());
+        labelIndex.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
+        labelIndex1.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
+
+    }
+
+    @FXML
+    private void buttonChangeIndexRenStart(){
+        labelIndexOkRen.setTextFill(Color.GREEN);
+        labelIndexOkRen.setText("OK ;-) zmieniony");
+        countIndex.setIndex(textFieldDiffrentIndexRenovation.textProperty().get());
+        labelIndexRenovation.textProperty().setValue(textFieldDiffrentIndexRenovation.textProperty().get());
+        labelIndex1Renovation.textProperty().setValue(textFieldDiffrentIndexRenovation.textProperty().get());
+
+    }
+
+
+
+    @FXML
     private void buttonCopyStart(){
         textFieldWMRenovation.textProperty().setValue(textFieldWM.textProperty().get());
         textFieldAddressRenovation.textProperty().setValue(textFieldAddress.textProperty().get());
@@ -375,5 +458,14 @@ public class Controller implements Initializable {
 
         labelAddressRenovation.textProperty().setValue(textFieldAddress.textProperty().get());
         labelAddress1Renovation.textProperty().setValue(textFieldAddress.textProperty().get());
+    }
+
+
+    @FXML
+    private void buttonCopyChangeIndexRenStart(){
+        textFieldDiffrentIndexRenovation.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
+        labelIndexRenovation.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
+        labelIndex1Renovation.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
+        countIndex.setIndex(textFieldDiffrentIndex.textProperty().get());
     }
 }

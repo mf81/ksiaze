@@ -6,15 +6,37 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ksiaze.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ksiaze.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="simple changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/blankBooklet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blankBooklet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jpgs/okladka-eksp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jpgs/okladka-eksp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jpgs/okladka-fundusz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jpgs/okladka-fundusz.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jpgs/printingsJpgs/okladka-eksp-trzy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jpgs/printingsJpgs/okladka-eksp-trzy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jpgs/printingsJpgs/okladka-fun-trzy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jpgs/printingsJpgs/okladka-fun-trzy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ksiaze.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/blankBooklet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blankBooklet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpgs/okladka-eksp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpgs/okladka-eksp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpgs/okladka-fundusz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpgs/okladka-fundusz.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpgs/printingsJpgs/okladka-eksp-trzy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpgs/printingsJpgs/okladka-eksp-trzy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpgs/printingsJpgs/okladka-fun-trzy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpgs/printingsJpgs/okladka-fun-trzy.jpg" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,13 +99,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="359" selection-start-line="359" selection-end-line="359" />
+            <state relative-caret-position="2546">
+              <caret line="146" column="59" lean-forward="true" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5723#6992#0" expanded="true" />
+                <element signature="e#6991#6992#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="204" column="34" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,26 +141,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/blankCoverExploatation.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/blankBooklet.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="50" column="229" selection-start-line="50" selection-start-column="229" selection-end-line="50" selection-end-column="229" />
             </state>
           </provider>
         </entry>
@@ -164,11 +191,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ksiaze/Utils/PrinterBooklet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ksiaze/Controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/ksiaze/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/blankCoverRenovation.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/blankCoverExploatation.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/blankBooklet.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" />
       </list>
     </option>
   </component>
@@ -194,7 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,24 +282,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="Property" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -280,28 +291,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="jpgs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="jpgs" type="462c0819:PsiDirectoryNode" />
-              <item name="printingsJpgs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,7 +311,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551102470864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551102762976" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -463,6 +457,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -517,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551101394690</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="simple changes">
+      <created>1551102506279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551102506279</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -527,7 +529,7 @@
     <frame x="0" y="23" width="1612" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24012738" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25286624" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -567,7 +569,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="simple changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple changes" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -680,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/ksiazeczka-fundusz.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -700,14 +696,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/ksiazeczka-eksp.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="64" column="170" selection-start-line="64" selection-start-column="155" selection-end-line="64" selection-end-column="170" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/okladka-czynszowe.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -742,20 +730,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/okladka-eksp.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/blankBooklet.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="359" selection-start-line="359" selection-end-line="359" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="388">
+          <caret line="50" column="229" selection-start-line="50" selection-start-column="229" selection-end-line="50" selection-end-column="229" />
         </state>
       </provider>
     </entry>
@@ -767,11 +746,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/blankBooklet.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="50" column="229" selection-start-line="50" selection-start-column="229" selection-end-line="50" selection-end-column="229" />
+        <state relative-caret-position="364">
+          <caret line="204" column="34" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="146" column="59" lean-forward="true" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5723#6992#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -791,7 +800,6 @@
             <option name="proportions">
               <list>
                 <option value="0.20223153" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

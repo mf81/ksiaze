@@ -27,9 +27,9 @@
                         <TextField fx:id="textFieldAddress" layoutX="85.0" layoutY="147.0" onKeyPressed="#labelAddressExploatationKeyPress" prefHeight="27.0" prefWidth="403.0" promptText="ul. Fijałkowskiego 10" />
                         <TextField fx:id="textFieldAccount" layoutX="85.0" layoutY="229.0" onKeyPressed="#labelAccountKeyPress" prefHeight="27.0" prefWidth="404.0" promptText="69 1040 2034 2345 1234 3456 9876" />
                         <Button fx:id="buttonNumber" layoutX="332.0" layoutY="270.0" mnemonicParsing="false" onAction="#buttonCheckNumberExploatation" text="Weryfikuj numer konta" />
-                         <Button fx:id="buttonPrintExploatation" layoutX="360.0" layoutY="408.0" mnemonicParsing="false" onAction="#buttonPrintExploatationStart" text="Drukuj książeczkę" />
-                         <ComboBox fx:id="comboBoxNumberOfPagesEx" layoutX="134.0" layoutY="408.0" prefHeight="27.0" prefWidth="100.0">
-                             <items>
+                         <Button fx:id="buttonPrintExploatation" layoutX="360.0" layoutY="492.0" mnemonicParsing="false" onAction="#buttonPrintExploatationStart" text="Drukuj książeczkę" />
+                         <ComboBox fx:id="comboBoxNumberOfPagesEx" layoutX="122.0" layoutY="492.0" prefHeight="27.0" prefWidth="119.0">
+                            <items>
                                  <FXCollections fx:factory="observableArrayList">
                                      <String fx:value="0" />
                                      <String fx:value="3" />
@@ -55,9 +55,9 @@
                          </ImageView>
                         <Label layoutX="86.0" layoutY="202.0" text="Numer konta bankowego:" />
                         <Label layoutX="85.0" layoutY="44.0" text="Nazwa Wspólnoty Mieszkaniowej:" />
-                        <Label layoutX="22.0" layoutY="413.0" text="Ilość blankietów:" />
-                        <CheckBox fx:id="chackBoxCoverExploatation" layoutX="276.0" layoutY="413.0" mnemonicParsing="false" selected="true" text="okładka" />
-                        <Label layoutX="252.0" layoutY="413.0" text="+" />
+                        <Label layoutX="14.0" layoutY="497.0" text="Ilość blankietów:" />
+                        <CheckBox fx:id="chackBoxCoverExploatation" layoutX="276.0" layoutY="497.0" mnemonicParsing="false" selected="true" text="okładka" />
+                        <Label layoutX="252.0" layoutY="497.0" text="+" />
                         <Label fx:id="labelWM" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="797.0" layoutY="43.0" prefHeight="51.0" prefWidth="275.0">
                            <font>
                               <Font name="System Bold" size="11.0" />
@@ -99,6 +99,16 @@
                               <Font size="7.0" />
                            </font>
                         </Label>
+                        <CheckBox fx:id="checkBoxIndex" layoutX="87.0" layoutY="429.0" mnemonicParsing="false" text="Inny INDEX" />
+                        <Label fx:id="labelIndexChange" layoutX="85.0" layoutY="372.0" prefHeight="17.0" prefWidth="178.0" text="Proponowany INDEX lokalu:" />
+                        <TextField fx:id="textFieldDiffrentIndex" editable="false" layoutX="87.0" layoutY="397.0" prefHeight="27.0" prefWidth="212.0" />
+                        <Button fx:id="buttonChangeIndexExp" disable="true" layoutX="318.0" layoutY="397.0" mnemonicParsing="false" onAction="#buttonChangeIndexExpStart" text="Zmień" />
+                        <Label fx:id="labelIndexOk" layoutX="190.0" layoutY="430.0" prefHeight="17.0" prefWidth="312.0" />
+                        <Label layoutX="60.0" layoutY="319.0" prefHeight="43.0" prefWidth="432.0" text="PAMIĘTAJ: W przypadku gdy WM nie posiada wirtualnych kont INDEX kontrahenta wpisz ręcznie." wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
             </content>
@@ -111,8 +121,8 @@
                           <TextField fx:id="textFieldAddressRenovation" layoutX="85.0" layoutY="147.0" onKeyPressed="#labelAddressRenovationKeyPress" prefHeight="27.0" prefWidth="403.0" promptText="ul. Fijałkowskiego 10" />
                           <TextField fx:id="textFieldAccountRenovation" layoutX="85.0" layoutY="229.0" onKeyPressed="#labelAccountKeyPress" prefHeight="27.0" prefWidth="404.0" promptText="69 1040 2034 2345 1234 3456 9876" />
                           <Button fx:id="buttonNumberRem" layoutX="332.0" layoutY="270.0" mnemonicParsing="false" onAction="#buttonCheckNumberRenovation" text="Weryfikuj numer konta" />
-                          <Button fx:id="buttonPrintRenovation" layoutX="360.0" layoutY="408.0" mnemonicParsing="false" onAction="#buttonPrintRenovationStart" text="Drukuj książeczkę" />
-                          <ComboBox fx:id="comboBoxNumberOfPagesRenovation" layoutX="164.0" layoutY="408.0" prefHeight="27.0" prefWidth="70.0">
+                          <Button fx:id="buttonPrintRenovation" layoutX="360.0" layoutY="492.0" mnemonicParsing="false" onAction="#buttonPrintRenovationStart" text="Drukuj książeczkę" />
+                          <ComboBox fx:id="comboBoxNumberOfPagesRenovation" layoutX="122.0" layoutY="492.0" prefHeight="27.0" prefWidth="119.0">
                                <items>
                                   <FXCollections fx:factory="observableArrayList">
                                       <String fx:value="0" />
@@ -139,9 +149,9 @@
                           </ImageView>
                           <Label layoutX="86.0" layoutY="202.0" text="Numer konta bankowego:" />
                           <Label layoutX="85.0" layoutY="44.0" text="Nazwa Wspólnoty Mieszkaniowej:" />
-                          <Label layoutX="46.0" layoutY="413.0" text="Ilość blankietów:" />
-                          <CheckBox fx:id="chackBoxCoverRenovation" layoutX="276.0" layoutY="413.0" mnemonicParsing="false" selected="true" text="okładka" />
-                          <Label layoutX="252.0" layoutY="413.0" text="+" />
+                          <Label layoutX="14.0" layoutY="497.0" text="Ilość blankietów:" />
+                          <CheckBox fx:id="chackBoxCoverRenovation" layoutX="276.0" layoutY="497.0" mnemonicParsing="false" selected="true" text="okładka" />
+                          <Label layoutX="252.0" layoutY="497.0" text="+" />
                           <Label fx:id="labelWMRenovation" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="797.0" layoutY="43.0" prefHeight="51.0" prefWidth="275.0">
                               <font>
                                   <Font name="System Bold" size="11.0" />
@@ -183,7 +193,18 @@
                                   <Font size="7.0" />
                               </font>
                           </Label>
-                        <Button fx:id="buttonCopy" layoutX="432.0" layoutY="31.0" mnemonicParsing="false" onAction="#buttonCopyStart" text="Kopiuj" />
+                          <CheckBox fx:id="getCheckBoxIndexRenovation" layoutX="87.0" layoutY="429.0" mnemonicParsing="false" text="Inny INDEX" />
+                          <Label fx:id="labelIndexChangeRenovation" layoutX="85.0" layoutY="372.0" prefHeight="17.0" prefWidth="178.0" text="Proponowany INDEX lokalu:" />
+                          <TextField fx:id="textFieldDiffrentIndexRenovation" editable="false" layoutX="87.0" layoutY="397.0" prefHeight="27.0" prefWidth="212.0" />
+                          <Button fx:id="buttonChangeIndexRen" disable="true" layoutX="318.0" layoutY="397.0" mnemonicParsing="false" onAction="#buttonChangeIndexRenStart" text="Zmień" />
+                          <Label fx:id="labelIndexOkRen" layoutX="202.0" layoutY="430.0" prefHeight="17.0" prefWidth="291.0" />
+                          <Label layoutX="60.0" layoutY="319.0" prefHeight="43.0" prefWidth="432.0" text="PAMIĘTAJ: W przypadku gdy WM nie posiada wirtualnych kont INDEX kontrahenta wpisz ręcznie." wrapText="true">
+                              <font>
+                                  <Font size="11.0" />
+                              </font>
+                          </Label>
+                          <Button fx:id="buttonCopy" layoutX="432.0" layoutY="31.0" mnemonicParsing="false" onAction="#buttonCopyStart" text="Kopiuj" />
+                        <Button fx:id="buttonCopyChangeIndexRen" disable="true" layoutX="388.0" layoutY="397.0" mnemonicParsing="false" onAction="#buttonCopyChangeIndexRenStart" text="Kopiuj i zmień" />
                       </children>
                   </AnchorPane>
               </content>
@@ -266,14 +287,19 @@
             <Blend />
          </effect>
       </TabPane>
-      <Label layoutX="39.0" layoutY="19.0" text="Imię Nazwisko / Nazwa" />
-      <TextField fx:id="textFieldName" layoutX="39.0" layoutY="46.0" onKeyPressed="#labelNameKeyPress" prefHeight="27.0" prefWidth="473.0" promptText="Jan Kowalski" />
-      <Label layoutX="576.0" layoutY="17.0" text="Kod pocztowy, miasto:" />
-      <TextField fx:id="textFieldZipCity" layoutX="576.0" layoutY="44.0" onKeyPressed="#labelZipCityKeyPress" prefHeight="27.0" prefWidth="205.0" text="37-700, Przemyśl" />
+      <Label layoutX="42.0" layoutY="20.0" text="Imię Nazwisko / Nazwa" />
+      <TextField fx:id="textFieldName" layoutX="42.0" layoutY="47.0" onKeyPressed="#labelNameKeyPress" prefHeight="27.0" prefWidth="388.0" promptText="Jan Kowalski" />
+      <Label layoutX="469.0" layoutY="20.0" text="Kod pocztowy, miasto:" />
+      <TextField fx:id="textFieldZipCity" layoutX="469.0" layoutY="47.0" onKeyPressed="#labelZipCityKeyPress" prefHeight="27.0" prefWidth="161.0" text="37-700, Przemyśl" />
       <ImageView fitHeight="126.0" fitWidth="307.0" layoutX="862.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@jpgs/ksiaze-logo.png" />
          </image>
       </ImageView>
+      <Label layoutX="971.0" layoutY="102.0" text="wersja: 1.0.2">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
