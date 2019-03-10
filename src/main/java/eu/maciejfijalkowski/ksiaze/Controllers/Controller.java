@@ -42,7 +42,7 @@ public class Controller implements Initializable {
     private Label labelWM, labelWM1, labelWM2, labelWMRenovation, labelWM1Renovation, labelWM2Renovation,
             labelAddress,labelAddress1, labelAddressRenovation, labelAddress1Renovation, labelAddressRent, labelAddress1Rent,
             labelZipCity, labelZipCityRenovation, labelZipCityRent,
-            labelName,labelName1, labelNameRenovation, labelName1Renovation, labelNameRent, labelName1Rent,
+            labelName,labelName1, labelNameRenovation, labelName1Renovation, labelNameRent, labelName1Rent, labelName11Rent,
             labelAccount,labelAccount1, labelAccountRenovation, labelAccount1Renovation, labelAccountRent, labelAccount1Rent,
             labelNumberCheck, labelNumberCheckRenovation, labelNumberCheckRent,
             labelIndex,labelIndex1, labelIndexRenovation, labelIndex1Renovation, labelIndexRent, labelIndex1Rent,
@@ -272,6 +272,7 @@ public class Controller implements Initializable {
                 labelName1Renovation.textProperty().bind(textFieldName.textProperty());
                 labelNameRent.textProperty().bind(textFieldName.textProperty());
                 labelName1Rent.textProperty().bind(textFieldName.textProperty());
+                labelName11Rent.textProperty().bind(textFieldName.textProperty());
             }
         });
 
@@ -442,8 +443,6 @@ public class Controller implements Initializable {
         labelIndex1Renovation.textProperty().setValue(textFieldDiffrentIndexRenovation.textProperty().get());
 
     }
-
-
 
     @FXML
     private void buttonCopyStart(){
