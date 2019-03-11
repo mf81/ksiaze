@@ -459,7 +459,6 @@ public class Controller implements Initializable {
         labelAddress1Renovation.textProperty().setValue(textFieldAddress.textProperty().get());
     }
 
-
     @FXML
     private void buttonCopyChangeIndexRenStart(){
         textFieldDiffrentIndexRenovation.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());

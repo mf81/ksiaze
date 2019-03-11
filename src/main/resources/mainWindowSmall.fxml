@@ -216,8 +216,8 @@
                         <TextField fx:id="textFieldAddressRent" layoutX="85.0" layoutY="147.0" onKeyPressed="#labelAddressRentKeyPress" prefHeight="27.0" prefWidth="403.0" promptText="ul. Fijałkowskiego 10" />
                         <TextField fx:id="textFieldAccountRent" layoutX="85.0" layoutY="229.0" onKeyPressed="#labelAccountKeyPress" prefHeight="27.0" prefWidth="404.0" promptText="69 1040 2034 2345 1234 3456 9876" />
                         <Button fx:id="buttonNumberCz" layoutX="332.0" layoutY="270.0" mnemonicParsing="false" onAction="#buttonCheckNumberRent" text="Weryfikuj numer konta" />
-                        <Button fx:id="buttonPrintRent" layoutX="360.0" layoutY="408.0" mnemonicParsing="false" onAction="#buttonPrintRentStart" text="Drukuj książeczkę" />
-                        <ComboBox fx:id="comboBoxNumberOfPagesRent" layoutX="164.0" layoutY="408.0" prefHeight="27.0" prefWidth="70.0">
+                        <Button fx:id="buttonPrintRent" layoutX="384.0" layoutY="408.0" mnemonicParsing="false" onAction="#buttonPrintRentStart" text="Drukuj książeczkę" />
+                        <ComboBox fx:id="comboBoxNumberOfPagesRent" layoutX="134.0" layoutY="408.0" prefHeight="27.0" prefWidth="125.0">
                             <items>
                                 <FXCollections fx:factory="observableArrayList">
                                     <String fx:value="0" />
@@ -243,9 +243,9 @@
                             </image>
                         </ImageView>
                         <Label layoutX="86.0" layoutY="202.0" text="Numer konta bankowego:" />
-                        <Label layoutX="46.0" layoutY="413.0" text="Ilość blankietów:" />
-                        <CheckBox fx:id="chackBoxCoverRent" layoutX="276.0" layoutY="413.0" mnemonicParsing="false" selected="true" text="okładka" />
-                        <Label layoutX="252.0" layoutY="413.0" text="+" />
+                        <Label layoutX="22.0" layoutY="413.0" text="Ilość blankietów:" />
+                        <CheckBox fx:id="chackBoxCoverRent" layoutX="297.0" layoutY="413.0" mnemonicParsing="false" selected="true" text="okładka" />
+                        <Label layoutX="271.0" layoutY="413.0" text="+" />
                         <Label layoutX="85.0" layoutY="122.0" text="Adres:" />
                         <Label fx:id="labelAddressRent" layoutX="717.0" layoutY="433.0" prefHeight="17.0" prefWidth="205.0" />
                         <Label fx:id="labelAddress1Rent" alignment="CENTER" contentDisplay="CENTER" layoutX="571.0" layoutY="464.0" prefHeight="17.0" prefWidth="121.0">
