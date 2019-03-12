@@ -1,6 +1,8 @@
 package eu.maciejfijalkowski.ksiaze.Controllers;
 
+import eu.maciejfijalkowski.ksiaze.Model.ModelDTO;
 import eu.maciejfijalkowski.ksiaze.Property.Property;
+import eu.maciejfijalkowski.ksiaze.Utils.*;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -12,10 +14,6 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import eu.maciejfijalkowski.ksiaze.Model.Model;
-import eu.maciejfijalkowski.ksiaze.Utils.FillBlankBooklet;
-import eu.maciejfijalkowski.ksiaze.Utils.IndexCount;
-import eu.maciejfijalkowski.ksiaze.Utils.NrbUtils;
-import eu.maciejfijalkowski.ksiaze.Utils.PrinterBooklet;
 
 import java.io.IOException;
 import java.net.URL;
@@ -34,8 +32,9 @@ public class Controller implements Initializable {
     final Property accountRenovation = new Property();
     final Property accountRent = new Property();
 
-    private Model model = Model.getInstance();
-    private IndexCount countIndex = new IndexCount();
+
+    private ModelDTO modelDTO = new ModelDTO();
+    private IndexCount countIndex = IndexCount.getInstance();
 
 
     @FXML
@@ -108,191 +107,122 @@ public class Controller implements Initializable {
     }
 
 
+
     public void initialize(URL location, ResourceBundle resources) {
 
-        checkBoxIndex.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(newValue) {
-                    textFieldDiffrentIndex.requestFocus();
-                    textFieldDiffrentIndex.selectAll();
-                    labelIndexChange.setText("Wpisz inny INDEX lokalu:");
-                    textFieldDiffrentIndex.setEditable(true);
-                    buttonChangeIndexExp.setDisable(false);
-                    buttonCopyChange = true;
-                }
-                else {
-                    labelIndexChange.setText("Proponowany INDEX lokalu:");
-                    labelIndexOk.setText("");
-                    textFieldDiffrentIndex.setEditable(false);
-                    buttonChangeIndexExp.setDisable(true);
-                    textFieldDiffrentIndex.textProperty().setValue(countIndex.count(textFieldAccount.textProperty().get()));
-                    countIndex.setIndex(countIndex.count(textFieldAccount.textProperty().get()));
-                    labelIndex.textProperty().setValue(countIndex.getIndex());
-                    labelIndex1.textProperty().setValue(countIndex.getIndex());
-                    labelIndex.textProperty().setValue(countIndex.getIndex());
-                    labelIndex1.textProperty().setValue(countIndex.getIndex());
-                    buttonCopyChange = false;
+        checkBoxIndex.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue) {
+                textFieldDiffrentIndex.requestFocus();
+                textFieldDiffrentIndex.selectAll();
+                labelIndexChange.setText("Wpisz inny INDEX lokalu:");
+                textFieldDiffrentIndex.setEditable(true);
+                buttonChangeIndexExp.setDisable(false);
+                buttonCopyChange = true;
+            }
+            else {
+                labelIndexChange.setText("Proponowany INDEX lokalu:");
+                labelIndexOk.setText("");
+                textFieldDiffrentIndex.setEditable(false);
+                buttonChangeIndexExp.setDisable(true);
+                textFieldDiffrentIndex.textProperty().setValue(countIndex.count(textFieldAccount.textProperty().get()));
+                countIndex.setIndex(countIndex.count(textFieldAccount.textProperty().get()));
+                labelIndex.textProperty().setValue(countIndex.getIndex());
+                labelIndex1.textProperty().setValue(countIndex.getIndex());
+                labelIndex.textProperty().setValue(countIndex.getIndex());
+                labelIndex1.textProperty().setValue(countIndex.getIndex());
+                buttonCopyChange = false;
 
-                }
             }
         });
 
-        getCheckBoxIndexRenovation.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(newValue) {
-                    textFieldDiffrentIndexRenovation.requestFocus();
-                    textFieldDiffrentIndexRenovation.selectAll();
-                    labelIndexChangeRenovation.setText("Wpisz inny INDEX lokalu:");
-                    textFieldDiffrentIndexRenovation.setEditable(true);
-                    buttonChangeIndexRen.setDisable(false);
-                    if (buttonCopyChange)
-                            buttonCopyChangeIndexRen.setDisable(false);
-                        else
-                            buttonCopyChangeIndexRen.setDisable(true);
-                }
-                else {
-                    labelIndexChangeRenovation.setText("Proponowany INDEX lokalu:");
-                    labelIndexOkRen.setText("");
-                    textFieldDiffrentIndexRenovation.setEditable(false);
-                    buttonChangeIndexRen.setDisable(true);
-                    buttonCopyChangeIndexRen.setDisable(true);
-                    textFieldDiffrentIndexRenovation.textProperty().setValue(countIndex.count(textFieldAccountRenovation.textProperty().get()));
-                    countIndex.setIndex(countIndex.count(textFieldAccountRenovation.textProperty().get()));
-                    labelIndexRenovation.textProperty().setValue(countIndex.getIndex());
-                    labelIndex1Renovation.textProperty().setValue(countIndex.getIndex());
+        getCheckBoxIndexRenovation.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue) {
+                textFieldDiffrentIndexRenovation.requestFocus();
+                textFieldDiffrentIndexRenovation.selectAll();
+                labelIndexChangeRenovation.setText("Wpisz inny INDEX lokalu:");
+                textFieldDiffrentIndexRenovation.setEditable(true);
+                buttonChangeIndexRen.setDisable(false);
+                if (buttonCopyChange)
+                        buttonCopyChangeIndexRen.setDisable(false);
+                    else
+                        buttonCopyChangeIndexRen.setDisable(true);
+            }
+            else {
+                labelIndexChangeRenovation.setText("Proponowany INDEX lokalu:");
+                labelIndexOkRen.setText("");
+                textFieldDiffrentIndexRenovation.setEditable(false);
+                buttonChangeIndexRen.setDisable(true);
+                buttonCopyChangeIndexRen.setDisable(true);
+                textFieldDiffrentIndexRenovation.textProperty().setValue(countIndex.count(textFieldAccountRenovation.textProperty().get()));
+                countIndex.setIndex(countIndex.count(textFieldAccountRenovation.textProperty().get()));
+                labelIndexRenovation.textProperty().setValue(countIndex.getIndex());
+                labelIndex1Renovation.textProperty().setValue(countIndex.getIndex());
 
-                }
             }
         });
 
-        chackBoxCoverExploatation.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                cover = newValue;
-            }
+        chackBoxCoverExploatation.selectedProperty().addListener((observable, oldValue, newValue) -> cover = newValue);
+
+        comboBoxNumberOfPagesEx.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue) -> number = (Integer)newValue);
+
+        chackBoxCoverRenovation.selectedProperty().addListener((observable, oldValue, newValue) -> cover = newValue);
+
+        comboBoxNumberOfPagesRenovation.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue) -> number = (Integer)newValue);
+
+        chackBoxCoverRent.selectedProperty().addListener((observable, oldValue, newValue) -> cover = newValue);
+
+        comboBoxNumberOfPagesRent.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue) -> number=(Integer)newValue);
+
+        nameWMExploatation.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelWM.textProperty().bind(textFieldWM.textProperty());
+            labelWM.setWrapText(true);
+            labelWM1.textProperty().bind(textFieldWM.textProperty());
+            labelWM2.textProperty().bind(textFieldWM.textProperty());
+            labelWM2.setWrapText(true);
         });
 
-        comboBoxNumberOfPagesEx.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                number = (Integer)newValue;
-            }
+        nameWMRenovation.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelWMRenovation.textProperty().bind(textFieldWMRenovation.textProperty());
+            labelWMRenovation.setWrapText(true);
+            labelWM1Renovation.textProperty().bind(textFieldWMRenovation.textProperty());
+            labelWM2Renovation.textProperty().bind(textFieldWMRenovation.textProperty());
+            labelWM2Renovation.setWrapText(true);
         });
 
-        chackBoxCoverRenovation.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                cover = newValue;
-            }
+        addressExploatation.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelAddress.textProperty().bind(textFieldAddress.textProperty());
+            labelAddress1.textProperty().bind(textFieldAddress.textProperty());
         });
 
-        comboBoxNumberOfPagesRenovation.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                number = (Integer)newValue;
-            }
+        addressRenovation.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelAddressRenovation.textProperty().bind(textFieldAddressRenovation.textProperty());
+            labelAddress1Renovation.textProperty().bind(textFieldAddressRenovation.textProperty());
         });
 
-        chackBoxCoverRent.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                cover = newValue;
-            }
+        addressRent.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelAddressRent.textProperty().bind(textFieldAddressRent.textProperty());
+            labelAddress1Rent.textProperty().bind(textFieldAddressRent.textProperty());
         });
 
-        comboBoxNumberOfPagesRent.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                number=(Integer)newValue;
-            }
+        zipCity.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelZipCity.textProperty().bind(textFieldZipCity.textProperty());
+            labelZipCityRenovation.textProperty().bind(textFieldZipCity.textProperty());
+            labelZipCityRent.textProperty().bind(textFieldZipCity.textProperty());
         });
 
-        nameWMExploatation.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelWM.textProperty().bind(textFieldWM.textProperty());
-                labelWM.setWrapText(true);
-                labelWM1.textProperty().bind(textFieldWM.textProperty());
-                labelWM2.textProperty().bind(textFieldWM.textProperty());
-                labelWM2.setWrapText(true);
-            }
+        name.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelName.textProperty().bind(textFieldName.textProperty());
+            labelName1.textProperty().bind(textFieldName.textProperty());
+            labelNameRenovation.textProperty().bind(textFieldName.textProperty());
+            labelName1Renovation.textProperty().bind(textFieldName.textProperty());
+            labelNameRent.textProperty().bind(textFieldName.textProperty());
+            labelName1Rent.textProperty().bind(textFieldName.textProperty());
+            labelName11Rent.textProperty().bind(textFieldName.textProperty());
         });
 
-        nameWMRenovation.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-
-                labelWMRenovation.textProperty().bind(textFieldWMRenovation.textProperty());
-                labelWMRenovation.setWrapText(true);
-                labelWM1Renovation.textProperty().bind(textFieldWMRenovation.textProperty());
-                labelWM2Renovation.textProperty().bind(textFieldWMRenovation.textProperty());
-                labelWM2Renovation.setWrapText(true);
-            }
-        });
-
-        addressExploatation.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelAddress.textProperty().bind(textFieldAddress.textProperty());
-                labelAddress1.textProperty().bind(textFieldAddress.textProperty());
-            }
-        });
-
-        addressRenovation.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-
-                labelAddressRenovation.textProperty().bind(textFieldAddressRenovation.textProperty());
-                labelAddress1Renovation.textProperty().bind(textFieldAddressRenovation.textProperty());
-            }
-        });
-
-        addressRent.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelAddressRent.textProperty().bind(textFieldAddressRent.textProperty());
-                labelAddress1Rent.textProperty().bind(textFieldAddressRent.textProperty());
-            }
-        });
-
-        textFieldAddress.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if (!newValue) model.setAddress(textFieldAddress.getText());
-            }
-        });
-
-        zipCity.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelZipCity.textProperty().bind(textFieldZipCity.textProperty());
-                labelZipCityRenovation.textProperty().bind(textFieldZipCity.textProperty());
-                labelZipCityRent.textProperty().bind(textFieldZipCity.textProperty());
-            }
-        });
-
-        textFieldZipCity.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(!newValue) model.setZipCity(textFieldZipCity.getText());
-            }
-        });
-
-        name.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelName.textProperty().bind(textFieldName.textProperty());
-                labelName1.textProperty().bind(textFieldName.textProperty());
-                labelNameRenovation.textProperty().bind(textFieldName.textProperty());
-                labelName1Renovation.textProperty().bind(textFieldName.textProperty());
-                labelNameRent.textProperty().bind(textFieldName.textProperty());
-                labelName1Rent.textProperty().bind(textFieldName.textProperty());
-                labelName11Rent.textProperty().bind(textFieldName.textProperty());
-            }
-        });
-
-        textFieldName.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(!newValue) model.setName(textFieldName.getText());
-            }
-        });
-
-        accountExploatation.labelTextProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelAccount.textProperty().bind(textFieldAccount.textProperty());
-                labelAccount1.textProperty().bind(textFieldAccount.textProperty());
-            }
-        });
-
-        textFieldAccount.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(!newValue) model.setAccount(textFieldName.getText());
-            }
+        accountExploatation.labelTextProperty().addListener((observable, oldValue, newValue) -> {
+            labelAccount.textProperty().bind(textFieldAccount.textProperty());
+            labelAccount1.textProperty().bind(textFieldAccount.textProperty());
         });
     }
 
@@ -377,49 +307,54 @@ public class Controller implements Initializable {
 
     @FXML
     public void buttonPrintExploatationStart() throws IOException {
+        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
 
         Node coverToPrint = printerBooklet.fxmlPrintingSchemaLoader("blankCoverExploatation.fxml");
         fillBlankBooklet.setBlankBooklet(coverToPrint);
-        fillBlankBooklet.setUpBooklet(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity,countIndex.getIndex());
+        fillBlankBooklet.setUpBooklet(modelDTO);
 
         Node bookletToPrint = printerBooklet.fxmlPrintingSchemaLoader("blankBooklet.fxml");
         fillBlankBooklet.setBlankBooklet(bookletToPrint);
-        fillBlankBooklet.setUpBooklet(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity,countIndex.getIndex());
+        fillBlankBooklet.setUpBooklet(modelDTO);
 
         printerBooklet.start(coverToPrint,bookletToPrint,cover,number,buttonPrintExploatation);
     }
 
     @FXML
     public void buttonPrintRenovationStart() throws IOException {
+        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
+
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
 
         Node coverToPrint = printerBooklet.fxmlPrintingSchemaLoader("blankCoverRenovation.fxml");
         fillBlankBooklet.setBlankBooklet(coverToPrint);
-        fillBlankBooklet.setUpBooklet(textFieldName, textFieldAccountRenovation, textFieldWMRenovation, textFieldAddressRenovation, textFieldZipCity,countIndex.getIndex());
+        fillBlankBooklet.setUpBooklet(modelDTO);
 
         Node bookletToPrint = printerBooklet.fxmlPrintingSchemaLoader("blankBooklet.fxml");
         fillBlankBooklet.setBlankBooklet(bookletToPrint);
-        fillBlankBooklet.setUpBooklet(textFieldName, textFieldAccountRenovation, textFieldWMRenovation, textFieldAddressRenovation, textFieldZipCity,countIndex.getIndex());
+        fillBlankBooklet.setUpBooklet(modelDTO);
 
         printerBooklet.start(coverToPrint,bookletToPrint,cover,number,buttonPrintRenovation);
     }
 
     @FXML
     public void buttonPrintRentStart() throws IOException {
+        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
+
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
 
         Node coverToPrint = printerBooklet.fxmlPrintingSchemaLoader("blankCoverRent.fxml");
         fillBlankBooklet.setBlankBooklet(coverToPrint);
-        fillBlankBooklet.setUpBooklet(textFieldName, textFieldAccountRent,textFieldWM, textFieldAddressRent, textFieldZipCity,countIndex.getIndex());
+        fillBlankBooklet.setUpBooklet(modelDTO);
 
         Node bookletToPrint = printerBooklet.fxmlPrintingSchemaLoader("blankBookletRent.fxml");
         fillBlankBooklet.setBlankBooklet(bookletToPrint);
-        fillBlankBooklet.setUpBooklet(textFieldName, textFieldAccountRent,textFieldWM, textFieldAddressRent, textFieldZipCity,countIndex.getIndex());
+        fillBlankBooklet.setUpBooklet(modelDTO);
 
         printerBooklet.start(coverToPrint,bookletToPrint,cover,number, buttonPrintRent);
     }

@@ -3,12 +3,15 @@ package eu.maciejfijalkowski.ksiaze.Utils;
 public class IndexCount {
     private String index;
 
-    public IndexCount() {
+    private static IndexCount ourInstance = new IndexCount();
+
+    public static IndexCount getInstance() {
+        return ourInstance;
     }
 
-    public IndexCount(String index){
-        this.index=index;
+    private IndexCount() {
     }
+
 
     public String count (){
         return index.substring(21).replaceAll("\\s+","");

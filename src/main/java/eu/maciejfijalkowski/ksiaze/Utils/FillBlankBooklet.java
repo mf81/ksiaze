@@ -1,8 +1,9 @@
 package eu.maciejfijalkowski.ksiaze.Utils;
 
+import eu.maciejfijalkowski.ksiaze.Model.Model;
+import eu.maciejfijalkowski.ksiaze.Model.ModelDTO;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 
 public class FillBlankBooklet {
     Label name;
@@ -25,26 +26,25 @@ public class FillBlankBooklet {
         this.bookletToPrint=bookletToPrint;
     }
 
-    public void setUpBooklet(TextField textName, TextField textAccount, TextField textFieldWM,
-                TextField textFieldAddress, TextField textZipCity,String textIndex){
+    public void setUpBooklet(ModelDTO modelDTO){
 
         name = (Label) bookletToPrint.lookup("#labelName");
-        if (name!=null) name.setText(textName.getText());
+        if (name!=null) name.setText(modelDTO.getModel().getName());
 
         account = (Label) bookletToPrint.lookup("#labelAccount11");
-        if (account!=null) account.setText(textAccount.getText());
+        if (account!=null) account.setText(modelDTO.getModel().getAccount());
 
         nameWmCover = (Label) bookletToPrint.lookup("#labelNameWM");
-        if (nameWmCover!=null) nameWmCover.setText(textFieldWM.getText());
+        if (nameWmCover!=null) nameWmCover.setText(modelDTO.getModel().getNameWM());
 
         adress = (Label) bookletToPrint.lookup("#labelAdress");
-        if (adress!=null) adress.setText(textFieldAddress.getText());
+        if (adress!=null) adress.setText(modelDTO.getModel().getAddress());
 
         zipCity = (Label) bookletToPrint.lookup("#labelZipCity");
-        if (zipCity!=null) zipCity.setText(textZipCity.getText());
+        if (zipCity!=null) zipCity.setText(modelDTO.getModel().getZipCity());
 
         index = (Label) bookletToPrint.lookup("#labelIndex");
-        if (index!=null) index.setText(textIndex);
+        if (index!=null) index.setText(modelDTO.getModel().getIndex());
 
     }
 

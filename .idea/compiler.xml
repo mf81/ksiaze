@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ksiaze" target="1.5" />
+      <module name="ksiaze" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
