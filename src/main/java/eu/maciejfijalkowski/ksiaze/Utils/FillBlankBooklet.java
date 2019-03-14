@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 
 public class FillBlankBooklet {
+
     private Label name;
     private Label account;
     private Label nameWmCover;
