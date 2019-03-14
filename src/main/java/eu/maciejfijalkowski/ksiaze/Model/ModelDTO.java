@@ -23,6 +23,17 @@ public class ModelDTO {
 
     }
 
+    public void add (TextField textFieldName, TextField textFieldAccount,
+                     TextField textFieldAddress, TextField textFieldZipCity){
+
+        model.setName(textFieldName.textProperty().get());
+        model.setAccount(textFieldAccount.textProperty().get());
+        model.setAddress(textFieldAddress.textProperty().get());
+        model.setZipCity(textFieldZipCity.textProperty().get());
+        model.setIndex(IndexCount.getInstance().getIndex());
+
+    }
+
     public Model getModel(){
         return model;
     }

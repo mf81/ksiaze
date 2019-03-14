@@ -133,17 +133,17 @@
             <Font size="5.0" />
          </font>
       </Label>
-      <Label layoutX="260.0" layoutY="188.0" prefHeight="13.0" prefWidth="101.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
+      <Label layoutX="260.0" layoutY="190.0" prefHeight="13.0" prefWidth="101.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
          <font>
             <Font size="8.0" />
          </font>
       </Label>
-      <Label layoutX="256.0" layoutY="448.0" prefHeight="13.0" prefWidth="101.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
+      <Label layoutX="256.0" layoutY="449.0" prefHeight="13.0" prefWidth="101.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
          <font>
             <Font size="8.0" />
          </font>
       </Label>
-      <Label layoutX="256.0" layoutY="707.0" prefHeight="13.0" prefWidth="101.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
+      <Label layoutX="256.0" layoutY="708.0" prefHeight="13.0" prefWidth="101.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
          <font>
             <Font size="8.0" />
          </font>

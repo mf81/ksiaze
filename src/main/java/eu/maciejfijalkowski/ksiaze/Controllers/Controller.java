@@ -3,8 +3,6 @@ package eu.maciejfijalkowski.ksiaze.Controllers;
 import eu.maciejfijalkowski.ksiaze.Model.ModelDTO;
 import eu.maciejfijalkowski.ksiaze.Property.Property;
 import eu.maciejfijalkowski.ksiaze.Utils.*;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,7 +11,6 @@ import javafx.scene.control.*;
 
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
-import eu.maciejfijalkowski.ksiaze.Model.Model;
 
 import java.io.IOException;
 import java.net.URL;
@@ -32,10 +29,8 @@ public class Controller implements Initializable {
     final Property accountRenovation = new Property();
     final Property accountRent = new Property();
 
-
     private ModelDTO modelDTO = new ModelDTO();
     private IndexCount countIndex = IndexCount.getInstance();
-
 
     @FXML
     private Label labelWM, labelWM1, labelWM2, labelWMRenovation, labelWM1Renovation, labelWM2Renovation,
@@ -48,18 +43,18 @@ public class Controller implements Initializable {
             labelIndexChange, labelIndexChangeRenovation, labelIndexOk, labelIndexOkRen;
 
     @FXML
-    private TextField textFieldZipCity,textFieldWM, textFieldWMRenovation,textFieldAddress,
+    private TextField textFieldZipCity, textFieldWM, textFieldWMRenovation, textFieldAddress,
             textFieldAddressRenovation, textFieldName, textFieldAccount, textFieldAccountRenovation, textFieldAccountRent, textFieldAddressRent,
-            textFieldDiffrentIndex,textFieldDiffrentIndexRenovation;
+            textFieldDiffrentIndex, textFieldDiffrentIndexRenovation;
 
     @FXML
-    private Button buttonPrintExploatation, buttonPrintRenovation, buttonPrintRent, buttonChangeIndexExp, buttonChangeIndexRen,buttonCopyChangeIndexRen;
+    private Button buttonPrintExploatation, buttonPrintRenovation, buttonPrintRent, buttonChangeIndexExp, buttonChangeIndexRen, buttonCopyChangeIndexRen;
 
     @FXML
-    private ComboBox<Integer> comboBoxNumberOfPagesEx,comboBoxNumberOfPagesRenovation,comboBoxNumberOfPagesRent;
+    private ComboBox<Integer> comboBoxNumberOfPagesEx, comboBoxNumberOfPagesRenovation, comboBoxNumberOfPagesRent;
 
     @FXML
-    private CheckBox chackBoxCoverExploatation,chackBoxCoverRenovation,chackBoxCoverRent, checkBoxIndex, getCheckBoxIndexRenovation;
+    private CheckBox chackBoxCoverExploatation, chackBoxCoverRenovation, chackBoxCoverRent, checkBoxIndex, getCheckBoxIndexRenovation;
 
     private Integer number = 0;
     private Boolean cover = true;
@@ -105,7 +100,6 @@ public class Controller implements Initializable {
     private void labelAccountKeyPress(KeyEvent event){
         accountExploatation.setLabel(textFieldAccount.getText());
     }
-
 
 
     public void initialize(URL location, ResourceBundle resources) {
@@ -180,6 +174,7 @@ public class Controller implements Initializable {
             labelWM2.textProperty().bind(textFieldWM.textProperty());
             labelWM2.setWrapText(true);
         });
+
 
         nameWMRenovation.labelTextProperty().addListener((observable, oldValue, newValue) -> {
             labelWMRenovation.textProperty().bind(textFieldWMRenovation.textProperty());
@@ -307,6 +302,8 @@ public class Controller implements Initializable {
 
     @FXML
     public void buttonPrintExploatationStart() throws IOException {
+        System.out.println(buttonPrintExploatation.getScene().getWindow());
+
         modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
@@ -320,12 +317,12 @@ public class Controller implements Initializable {
         fillBlankBooklet.setBlankBooklet(bookletToPrint);
         fillBlankBooklet.setUpBooklet(modelDTO);
 
-        printerBooklet.start(coverToPrint,bookletToPrint,cover,number,buttonPrintExploatation);
+        printerBooklet.start(coverToPrint,bookletToPrint,cover,number);
     }
 
     @FXML
     public void buttonPrintRenovationStart() throws IOException {
-        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
+        modelDTO.add(textFieldName, textFieldAccountRenovation,textFieldWMRenovation,textFieldAddressRenovation, textFieldZipCity);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
@@ -338,12 +335,12 @@ public class Controller implements Initializable {
         fillBlankBooklet.setBlankBooklet(bookletToPrint);
         fillBlankBooklet.setUpBooklet(modelDTO);
 
-        printerBooklet.start(coverToPrint,bookletToPrint,cover,number,buttonPrintRenovation);
+        printerBooklet.start(coverToPrint, bookletToPrint, cover, number);
     }
 
     @FXML
     public void buttonPrintRentStart() throws IOException {
-        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
+        modelDTO.add(textFieldName, textFieldAccountRent,textFieldAddressRent, textFieldZipCity);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
@@ -356,7 +353,7 @@ public class Controller implements Initializable {
         fillBlankBooklet.setBlankBooklet(bookletToPrint);
         fillBlankBooklet.setUpBooklet(modelDTO);
 
-        printerBooklet.start(coverToPrint,bookletToPrint,cover,number, buttonPrintRent);
+        printerBooklet.start(coverToPrint,bookletToPrint,cover,number);
     }
 
     @FXML
@@ -366,7 +363,6 @@ public class Controller implements Initializable {
         countIndex.setIndex(textFieldDiffrentIndex.textProperty().get());
         labelIndex.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
         labelIndex1.textProperty().setValue(textFieldDiffrentIndex.textProperty().get());
-
     }
 
     @FXML
@@ -376,7 +372,6 @@ public class Controller implements Initializable {
         countIndex.setIndex(textFieldDiffrentIndexRenovation.textProperty().get());
         labelIndexRenovation.textProperty().setValue(textFieldDiffrentIndexRenovation.textProperty().get());
         labelIndex1Renovation.textProperty().setValue(textFieldDiffrentIndexRenovation.textProperty().get());
-
     }
 
     @FXML
