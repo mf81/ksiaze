@@ -19,26 +19,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         scene.getStylesheets().add(getClass().getClassLoader().getResource("css/bootstrap3.css").toExternalForm());
 
-//        root.setOnMousePressed(e -> root.requestFocus());
-//        root.focusedProperty().addListener((observable, oldValue, newValue) ->
-//                root.requestFocus());
-
         primaryStage.getIcons().add(new Image("/jpgs/icon.png"));
-//        primaryStage.focusedProperty().addListener((observable, oldValue, newValue) -> {
-//            primaryStage.focusedProperty().get();
-//            System.out.println("primaryStage focused : "+newValue);
-//
-//        });
-
-//        primaryStage.focusedProperty().addListener((observable, oldValue, newValue) -> {
-//            if (!newValue) {
-//                System.out.println("primaryStage focused : "+newValue);
-//                primaryStage.show();
-//            } else {
-//                primaryStage.show();
-//            }
-//        });
-
 
         primaryStage.setResizable(false);
         primaryStage.show();
