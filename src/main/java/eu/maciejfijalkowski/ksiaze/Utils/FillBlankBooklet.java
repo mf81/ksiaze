@@ -6,14 +6,14 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 
 public class FillBlankBooklet {
-    Label name;
-    Label account;
-    Label nameWmCover;
-    Label adress;
-    Label zipCity;
-    Label index;
+    private Label name;
+    private Label account;
+    private Label nameWmCover;
+    private Label adress;
+    private Label zipCity;
+    private Label index;
 
-    Node bookletToPrint;
+    private Node bookletToPrint;
 
     public FillBlankBooklet() {
     }
