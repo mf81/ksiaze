@@ -302,8 +302,6 @@ public class Controller implements Initializable {
 
     @FXML
     public void buttonPrintExploatationStart() throws IOException {
-        System.out.println(buttonPrintExploatation.getScene().getWindow());
-
         modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();

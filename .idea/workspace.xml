@@ -6,9 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="adding data model">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="adding tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksiaze.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ksiaze.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Controllers/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Utils/FillBlankBooklet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Utils/FillBlankBooklet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.class" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,9 +37,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Ksiaze$NrbUtilsTest.ic" NAME="NrbUtilsTest Coverage Results" MODIFIED="1552823085090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>eu.maciejfijalkowski.ksiaze.Utils.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/ksiaze$Main.ic" NAME="Main Coverage Results" MODIFIED="1550663368819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ksiaze.Controllers.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Ksiaze$IndexCountTest.ic" NAME="IndexCountTest Coverage Results" MODIFIED="1552817358963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>eu.maciejfijalkowski.ksiaze.Utils.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="212" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -74,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/PrinterBooklet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="202">
               <caret line="17" column="104" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -84,57 +109,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-              <folding>
-                <element signature="e#1622#1623#0" expanded="true" />
-                <element signature="e#1650#1651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2632">
-              <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3178#3319#0" />
-                <element signature="e#3325#3469#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/ModelDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="11" column="5" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/FillBlankBooklet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
+            <state relative-caret-position="-88">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -151,6 +128,7 @@
         <option value="Interface" />
         <option value="Singleton" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -196,13 +174,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/blankBookletRent.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/ModelDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/CursorInTextAreaBecomesInvisible.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/PrinterBooklet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/FillBlankBooklet.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/ModelDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtils.java" />
       </list>
     </option>
   </component>
@@ -228,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,81 +240,10 @@
               <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ksiaze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksiaze" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -349,9 +260,12 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552546441706" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552823380297" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="eu.maciejfijalkowski.ksiaze.Main" />
     <property name="dynamic.classpath" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20223153" />
@@ -359,15 +273,11 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/jpgs/printingsJpgs" />
-      <recent name="$PROJECT_DIR$/src/main/resources/jpgs" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="eu.maciejfijalkowski.ksiaze.Utils" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ksiaze.Property" />
-      <recent name="ksiaze.Utils" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="eu.maciejfijalkowski.ksiaze.Main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils" />
@@ -375,6 +285,19 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/jpgs/printingsFxml" />
       <recent name="$PROJECT_DIR$/src/main/resources/jpgs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ksiaze.Property" />
+      <recent name="ksiaze.Utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/jpgs/printingsJpgs" />
+      <recent name="$PROJECT_DIR$/src/main/resources/jpgs" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -389,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.NrbUtilsTest.nrbGeneratorNoWhiteSpaces">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -423,64 +346,107 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NrbUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ksiaze.Utils.NrbUtils" />
-      <module name="ksiaze" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ksiaze.Utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrinterBooklet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ksiaze.Utils.PrinterBooklet" />
-      <module name="ksiaze" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ksiaze.Utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Wyp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ksiaze.Wyp" />
-      <module name="ksiaze" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ksiaze.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="wyp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ksiaze.wyp" />
+    <configuration name="NrbUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ksiaze" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ksiaze.*" />
+          <option name="PATTERN" value="eu.maciejfijalkowski.ksiaze.Utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="eu.maciejfijalkowski.ksiaze.Utils" />
+      <option name="MAIN_CLASS_NAME" value="eu.maciejfijalkowski.ksiaze.Utils.NrbUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NrbUtilsTest.nrbGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ksiaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.maciejfijalkowski.ksiaze.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.maciejfijalkowski.ksiaze.Utils" />
+      <option name="MAIN_CLASS_NAME" value="eu.maciejfijalkowski.ksiaze.Utils.NrbUtilsTest" />
+      <option name="METHOD_NAME" value="nrbGenerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NrbUtilsTest.nrbGenerator2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ksiaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.maciejfijalkowski.ksiaze.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.maciejfijalkowski.ksiaze.Utils" />
+      <option name="MAIN_CLASS_NAME" value="eu.maciejfijalkowski.ksiaze.Utils.NrbUtilsTest" />
+      <option name="METHOD_NAME" value="nrbGenerator2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NrbUtilsTest.nrbGeneratorNoWhiteSpaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ksiaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.maciejfijalkowski.ksiaze.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.maciejfijalkowski.ksiaze.Utils" />
+      <option name="MAIN_CLASS_NAME" value="eu.maciejfijalkowski.ksiaze.Utils.NrbUtilsTest" />
+      <option name="METHOD_NAME" value="nrbGeneratorNoWhiteSpaces" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NrbUtilsTest.nrbGeneratorZeroPasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ksiaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.maciejfijalkowski.ksiaze.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.maciejfijalkowski.ksiaze.Utils" />
+      <option name="MAIN_CLASS_NAME" value="eu.maciejfijalkowski.ksiaze.Utils.NrbUtilsTest" />
+      <option name="METHOD_NAME" value="nrbGeneratorZeroPasses" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -518,17 +484,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.NrbUtils" />
-      <item itemvalue="Application.PrinterBooklet" />
-      <item itemvalue="Application.Wyp" />
-      <item itemvalue="Application.wyp" />
+      <item itemvalue="JUnit.NrbUtilsTest" />
+      <item itemvalue="JUnit.NrbUtilsTest.nrbGenerator" />
+      <item itemvalue="JUnit.NrbUtilsTest.nrbGenerator2" />
+      <item itemvalue="JUnit.NrbUtilsTest.nrbGeneratorZeroPasses" />
+      <item itemvalue="JUnit.NrbUtilsTest.nrbGeneratorNoWhiteSpaces" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrinterBooklet" />
-        <item itemvalue="Application.NrbUtils" />
-        <item itemvalue="Application.Wyp" />
-        <item itemvalue="Application.wyp" />
+        <item itemvalue="JUnit.NrbUtilsTest.nrbGeneratorNoWhiteSpaces" />
+        <item itemvalue="JUnit.NrbUtilsTest" />
+        <item itemvalue="JUnit.NrbUtilsTest.nrbGeneratorZeroPasses" />
+        <item itemvalue="JUnit.NrbUtilsTest.nrbGenerator2" />
+        <item itemvalue="JUnit.NrbUtilsTest.nrbGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -614,17 +582,62 @@
       <option name="project" value="LOCAL" />
       <updated>1552565655379</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding data model">
+      <created>1552565939715</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1552565939715</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adding tests">
+      <created>1552823290909</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1552823290909</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="NrbUtilsTest_getAccountNumberNoNrb - 2019.03.17 at 12h 30m 50s.xml">
+      <configuration name="NrbUtilsTest.getAccountNumberNoNrb" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_getAccountNumberNoNrb - 2019.03.17 at 12h 31m 26s.xml">
+      <configuration name="NrbUtilsTest.getAccountNumberNoNrb" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_getAccountNumberNoNrb - 2019.03.17 at 12h 32m 32s.xml">
+      <configuration name="NrbUtilsTest.getAccountNumberNoNrb" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_getAccountNumberNoNrb - 2019.03.17 at 12h 32m 44s.xml">
+      <configuration name="NrbUtilsTest.getAccountNumberNoNrb" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_nrbGenerator - 2019.03.17 at 12h 41m 05s.xml">
+      <configuration name="NrbUtilsTest.nrbGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_nrbGenerator2 - 2019.03.17 at 12h 42m 32s.xml">
+      <configuration name="NrbUtilsTest.nrbGenerator2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_nrbGeneratorZeroPasses - 2019.03.17 at 12h 43m 18s.xml">
+      <configuration name="NrbUtilsTest.nrbGeneratorZeroPasses" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest - 2019.03.17 at 12h 44m 21s.xml">
+      <configuration name="NrbUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest - 2019.03.17 at 12h 44m 46s.xml">
+      <configuration name="NrbUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NrbUtilsTest_nrbGeneratorNoWhiteSpaces - 2019.03.17 at 12h 46m 11s.xml">
+      <configuration name="NrbUtilsTest.nrbGeneratorNoWhiteSpaces" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1570" height="865" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2853403" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28861257" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -633,7 +646,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908162" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32341528" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32341528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -657,25 +670,25 @@
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3299363" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32984293" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_PATCH_IN_EXPLORER" value="true" />
     <MESSAGE value="second commit" />
     <MESSAGE value="simple changes" />
     <MESSAGE value="adding possibility to change index of customer" />
     <MESSAGE value="adding data model" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding data model" />
+    <MESSAGE value="adding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding tests" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ksiaze/Property/PropertyLabelAccount.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ksiaze/Interfaces/MyLabel.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ksiaze/Model/kopia.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/ksiaze-poziom-1000.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/ksiaze-1000.png" />
@@ -720,12 +733,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/blankCoverRent.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="172" selection-start-line="8" selection-start-column="172" selection-end-line="8" selection-end-column="172" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/icon.png">
       <provider selected="true" editor-type-id="images" />
@@ -745,12 +758,12 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/blankCoverRenovation.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="128" selection-start-line="15" selection-start-column="128" selection-end-line="15" selection-end-column="128" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/ksiazeczka-eksp.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -768,31 +781,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jpgs/okladka-eksp.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/blankBooklet.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="50" column="229" selection-start-line="50" selection-start-column="229" selection-end-line="50" selection-end-column="229" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/blankCoverExploatation.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -829,21 +835,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/blankBookletRent.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
           <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/CursorInTextAreaBecomesInvisible.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/print/PrinterJob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -851,52 +850,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/PrinterBooklet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="104" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mainWindowSmall.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
           <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mainWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4161">
           <caret line="219" column="35" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/FillBlankBooklet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/ModelDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="152">
           <caret line="11" column="5" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -904,14 +876,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/NrbUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/IndexCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2632">
-          <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+        <state relative-caret-position="438">
+          <caret line="303" column="67" selection-start-line="303" selection-start-column="67" selection-end-line="303" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3178#3319#0" />
-            <element signature="e#3325#3469#0" />
           </folding>
         </state>
       </provider>
@@ -919,10 +928,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/PrinterBooklet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="17" column="104" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
           <folding>
-            <element signature="e#1622#1623#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/maciejfijalkowski/ksiaze/Utils/FillBlankBooklet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

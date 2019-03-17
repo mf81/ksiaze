@@ -18,15 +18,17 @@ public class IndexCount {
     }
 
     public String count (String index){
-        if(index.length()>=24){
-            this.index = index.substring(21).replaceAll("\\s+","");
-            return this.index;
-        }
-        return "";
+        index=index.replaceAll("\\s+","");
+        if(index.length()>=24)
+            return index.substring(17);
+        return "000000000";
     }
 
     public void setIndex(String index) {
-        this.index = index;
+        if(index.length()>=10 || !index.matches("\\d+"))
+            this.index = "000000000";
+        else
+            this.index = index;
     }
 
     public String getIndex() {
