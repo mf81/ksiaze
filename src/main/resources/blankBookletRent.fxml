@@ -148,6 +148,21 @@
             <Font size="8.0" />
          </font>
       </Label>
+      <Label layoutX="-11.0" layoutY="138.0" rotate="-90.0" text="Książe - Generator książeczek opłat, autor: Maciej Fijałkowski">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
+      <Label layoutX="-16.0" layoutY="397.0" rotate="-90.0" text="Książe - Generator książeczek opłat, autor: Maciej Fijałkowski">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
+      <Label layoutX="-16.0" layoutY="656.0" rotate="-90.0" text="Książe - Generator książeczek opłat, autor: Maciej Fijałkowski">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
 
  
    </children>

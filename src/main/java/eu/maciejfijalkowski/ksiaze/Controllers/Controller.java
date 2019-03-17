@@ -302,7 +302,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void buttonPrintExploatationStart() throws IOException {
-        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity);
+        modelDTO.add(textFieldName, textFieldAccount,textFieldWM,textFieldAddress, textFieldZipCity, textFieldDiffrentIndex);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
@@ -320,7 +320,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void buttonPrintRenovationStart() throws IOException {
-        modelDTO.add(textFieldName, textFieldAccountRenovation,textFieldWMRenovation,textFieldAddressRenovation, textFieldZipCity);
+        modelDTO.add(textFieldName, textFieldAccountRenovation,textFieldWMRenovation,textFieldAddressRenovation, textFieldZipCity, textFieldDiffrentIndexRenovation);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();
@@ -338,7 +338,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void buttonPrintRentStart() throws IOException {
-        modelDTO.add(textFieldName, textFieldAccountRent,textFieldAddressRent, textFieldZipCity);
+        modelDTO.add(textFieldName, textFieldAccountRent,textFieldAddressRent, textFieldZipCity, textFieldDiffrentIndex);
 
         PrinterBooklet printerBooklet = new PrinterBooklet();
         FillBlankBooklet fillBlankBooklet = new FillBlankBooklet();

@@ -48,7 +48,7 @@
             <Font size="6.0" />
          </font>
       </Label>
-      <Label fx:id="labelNameWM1" alignment="TOP_LEFT" layoutX="171.0" layoutY="35.0" lineSpacing="6.0" prefHeight="34.0" prefWidth="302.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}"  wrapText="true">
+      <Label fx:id="labelNameWM1" alignment="TOP_LEFT" layoutX="171.0" layoutY="35.0" lineSpacing="6.0" prefHeight="34.0" prefWidth="302.0" style="${labelNameWM.style}" text="${labelNameWM.text}" tooltip="${labelNameWM.tooltip}" wrapText="true">
          <font>
             <Font size="10.0" />
          </font>
@@ -176,6 +176,21 @@
       <Label alignment="CENTER" layoutX="224.0" layoutY="187.0" prefHeight="13.0" prefWidth="53.0" style="${labelIndex.style}" text="${labelIndex.text}" tooltip="${labelIndex.tooltip}">
          <font>
             <Font size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="-31.0" layoutY="117.0" rotate="-90.0" text="Książe - Generator książeczek opłat, autor: Maciej Fijałkowski">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
+      <Label layoutX="-31.0" layoutY="376.0" rotate="-90.0" text="Książe - Generator książeczek opłat, autor: Maciej Fijałkowski">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
+      <Label layoutX="-31.0" layoutY="637.0" rotate="-90.0" text="Książe - Generator książeczek opłat, autor: Maciej Fijałkowski">
+         <font>
+            <Font size="5.0" />
          </font>
       </Label>
 

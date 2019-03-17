@@ -5,6 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="805.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -13,10 +14,15 @@
             <Image url="@jpgs/printingsJpgs/okladka-eksp-trzy.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="labelNameWM" layoutX="259.0" layoutY="77.0" prefHeight="47.0" prefWidth="231.0" text="Label" wrapText="true"/>
+      <Label fx:id="labelNameWM" layoutX="259.0" layoutY="77.0" prefHeight="47.0" prefWidth="231.0" text="Label" wrapText="true" />
       <Separator layoutX="14.0" layoutY="274.0" prefHeight="0.0" prefWidth="491.0" />
       <Separator layoutX="14.0" layoutY="533.0" prefHeight="0.0" prefWidth="491.0" />
       <Separator layoutX="14.0" layoutY="16.0" prefHeight="0.0" prefWidth="491.0" />
       <Separator layoutX="14.0" layoutY="791.0" prefHeight="0.0" prefWidth="491.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="250.0" prefHeight="13.0" prefWidth="88.0" text="Generator książeczek opłat - Książe autor: Maciej Fijałkowski" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -12,25 +12,25 @@ public class ModelDTO {
     }
 
     public void add (TextField textFieldName, TextField textFieldAccount, TextField textFieldWM,
-                     TextField textFieldAddress, TextField textFieldZipCity){
+                     TextField textFieldAddress, TextField textFieldZipCity, TextField textFieldIndex){
 
         model.setName(textFieldName.textProperty().get());
         model.setAccount(textFieldAccount.textProperty().get());
         model.setNameWM(textFieldWM.textProperty().get());
         model.setAddress(textFieldAddress.textProperty().get());
         model.setZipCity(textFieldZipCity.textProperty().get());
-        model.setIndex(IndexCount.getInstance().getIndex());
+        model.setIndex(textFieldIndex.textProperty().get());
 
     }
 
     public void add (TextField textFieldName, TextField textFieldAccount,
-                     TextField textFieldAddress, TextField textFieldZipCity){
+                     TextField textFieldAddress, TextField textFieldZipCity, TextField textFieldIndex){
 
         model.setName(textFieldName.textProperty().get());
         model.setAccount(textFieldAccount.textProperty().get());
         model.setAddress(textFieldAddress.textProperty().get());
         model.setZipCity(textFieldZipCity.textProperty().get());
-        model.setIndex(IndexCount.getInstance().getIndex());
+        model.setIndex(textFieldIndex.textProperty().get());
 
     }
 

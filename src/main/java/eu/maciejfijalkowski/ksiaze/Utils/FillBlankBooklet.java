@@ -1,6 +1,5 @@
 package eu.maciejfijalkowski.ksiaze.Utils;
 
-import eu.maciejfijalkowski.ksiaze.Model.Model;
 import eu.maciejfijalkowski.ksiaze.Model.ModelDTO;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
